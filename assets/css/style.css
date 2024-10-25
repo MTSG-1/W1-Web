@@ -1,0 +1,11 @@
+body{
+    padding: 4px;
+    font-family: sans-serif;
+}
+.title{
+    font-weight: bold;
+    color:crimson;
+}
+.text{
+    font-size: 16pt;
+}
