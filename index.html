@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progressive Web Applications</title> 
+    <title>Progressive Web Applications</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <div>
+    <div class="wrapper">
         <!--  nav ใช้ควบคุม css  -->
-        <nav> 
-        <ul>
-            <!-- li*4>a คำสั่งลัด -->
-            <li><a href="">Home</a></li> 
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- section ใช้แบ่งเนื้อหาแต่ละส่วน -->
-    <section>
-    <!-- header คือ card แสดงเนื้อหาหลัก -->
-        <header>
-            <h1>Your Web Presence</h1>
-            <!-- lorem15 สามารถกำหนดความยาวของข้อความได้ -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore ipsa consequuntur saepe quod ducimus.</p>
-            <a href="#">Read More</a>
-        </header>
-        <!-- div เป็นการสร้างกรอบห้ข้อมูล -->
-        <div>
-            <h4>Membership</h4>
-            <p>#399/moth</p>
-            <a href="">Buy Now</a>
-        </div>
-        <div>
-            <h4>Premium Membership</h4>
-            <p>#399/moth</p>
-            <a href="">Buy Now</a>
-        </div>
-    </section>
+        <nav class="main-nav">
+            <ul>
+                <!-- li*4>a คำสั่งลัด -->
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- section ใช้แบ่งเนื้อหาแต่ละส่วน -->
+        <section class="top-container">
+            <!-- header คือ card แสดงเนื้อหาหลัก -->
+            <header class="hero-sections">
+                <h1>Your Web Presence</h1>
+                <!-- lorem15 สามารถกำหนดความยาวของข้อความได้ -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore ipsa consequuntur saepe quod
+                    ducimus.</p>
+                <a href="#">Read More</a>
+            </header>
+            <!-- div เป็นการสร้างกรอบห้ข้อมูล -->
+            <div class="top-box top-box-a">
+                <h4>Membership</h4>
+                <p>#399/moth</p>
+                <a href="">Buy Now</a>
+            </div>
+            <div class="top-box top-box-b">
+                <h4>Premium Membership</h4>
+                <p>#399/moth</p>
+                <a href="">Buy Now</a>
+            </div>
+        </section>
 
-    <!-- section ในส่วนใต้ herder -->
-    <section>
-        <div>
-            <h3>Analytis</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta totam!</p>
-        </div>
-        <div>
-            <h3>Analytis</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta totam!</p>
-        </div>
-        <div>
-            <h3>Analytis</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta totam!</p>
-        </div>
-        <div>
-            <h3>Analytis</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta totam!</p>
-        </div>
-    </section>
+        <!-- section ในส่วนใต้ herder -->
+        <section class="boxes">
+            <div class="box">
+                <h3>Analytis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta
+                    totam!</p>
+            </div>
+            <div class="box">
+                <h3>Analytis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta
+                    totam!</p>
+            </div>
+            <div class="box">
+                <h3>Analytis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta
+                    totam!</p>
+            </div>
+            <div class="box">
+                <h3>Analytis</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quaerat animi hic, iusto soluta
+                    totam!</p>
+            </div>
+        </section>
 
-    <section>
-        <img src="" alt="">
-        <div>
-            <h2>Ouy Service</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati repellat similique quo consequatur unde?</p>
-            <a href="">Lern More</a>
-        </div>
-    </section>
-    <footer>
-        <p>Matus Sangsawang &copy;2024 </p>
-    </footer>
+        <section class="info">
+            <img src="https://images.pexels.com/photos/70365/forest-sunbeams-trees-sunlight-70365.jpeg" alt=""
+                style="width: 100%">
+            <div>
+                <h2>Ouy Service</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati repellat similique quo
+                    consequatur unde?</p>
+                <a href="">Lern More</a>
+            </div>
+        </section>
+        <footer>
+            <p>Matus Sangsawang &copy;2024 </p>
+        </footer>
     </div>
 
 
 </body>
+
 </html>
