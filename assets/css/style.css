@@ -1,6 +1,26 @@
 body{
     padding: 4px;
     font-family: sans-serif;
+    margin: 30px 50px;
+    background-color: #ffff;
+    
+}
+.html{
+    box-sizing: border-box;
+    font-family:sans-serif;
+    color: black;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn:hover{
+background-color: cadetblue;
+color: black;
 }
 .title{
     font-weight: bold;
@@ -21,19 +41,23 @@ body{
     grid-gap: 20px;
     list-style: none; /* list-style ทำให้การแสดงผลที่มี style ใน tag จะหายไป */
     grid-template-columns:repeat(4,1fr) ;/* responsive หรือ PWA (Progressive Web App;ication) ของเว็บ fr คือ fraction เป็นสำหรับแบ่งสัดส่วนพื้นที่การแสดงผล*/
-
+    padding: 0;
 }
 .main-nav a {
+
     background-color: #dddddd;
     display: block;/* แสดงผลเป็นกล่อง */
-    padding: 0;
+    padding: 20px;
     text-align: center;
     color: black;
     text-transform: uppercase;/* กำหนดลักษณะการแสดงผลตัวอักษร เช่น ตัวหนาทั้งหมด ตัวเล็กทั้งหมด */
     font-size: 20px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     transition: all 500ms ease;
+   
 }
+
+
 .main-nav a:hover{/* เปลี่ยนการแสดงผลเมื่อเมาส์เคลื่อนผ่าน */
     background-color: black;
     color: white;
@@ -75,7 +99,6 @@ body{
 }
 .top-box {
     background-color: #dddddd;
-    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
@@ -83,10 +106,12 @@ body{
 }
 .top-box-a {
     grid-area: top-box-a;
+    text-align: center;
 }
 
 .top-box-b {
     grid-area: top-box-b;
+    text-align: center;
 }
 
 .top-box p {
@@ -104,11 +129,96 @@ body{
     padding: 2rem;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-
+.info .btn{
+    display: inline-block;
+    margin-top: 10px;
+}
 .info {
     background-color: #dddddd;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2,1fr);
+}
+footer{
+    margin-top: 2rem;
+    background-color: black;
+    color: #dddddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media(max-width: 850px) {
+    body{
+        display: inline-block;
+        padding: 4px;
+        font-family: sans-serif;
+        margin: 30px 50px;
+        background-color: #ffff;
+      
+        
+    }
+    .html{
+        box-sizing: border-box;
+        font-family:sans-serif;
+        color: black;
+    }
+
+    .top-container{
+        grid-template-columns:
+        'hero-sections hero-sections'
+            'top-box-a top-box-b' ;
+    }
+    .info{
+       /* gtc ย่อมาจาก grid-template-columns */ grid-template-columns: repeat(1,1fr);
+    }   
+    .info div{
+        padding: 2rem 2rem;
+    }
+    .main-nav ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+    
+}
+
+@media(max-width: 650px) {
+    body{
+        display: inline-block;
+        padding: 4px;
+        font-family: sans-serif;
+        margin: 30px 50px;
+        background-color: #ffff;
+      
+        
+    }
+    .html{
+        box-sizing: border-box;
+        font-family:sans-serif;
+        color: black;
+    }
+
+    .top-container{
+        grid-template-areas:
+        'hero-sections'
+        'top-box-a'
+        'top-box-b';
+        grid-template-columns: repeat(1fr ,1fr);
+       
+        
+    }
+   
+    .info{
+       /* gtc ย่อมาจาก grid-template-columns */ grid-template-columns: repeat(1,1fr);
+    }   
+    .info div{
+        padding: 2rem 2rem;
+    }
+    .main-nav ul{
+        grid-template-columns: repeat(1 ,1fr);
+        gap: 1rem;
+       
+    }
+  
+    
 }
